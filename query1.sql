@@ -1,3 +1,3 @@
-SELECT books.title
+SELECT title
 FROM   books, publisher
 WHERE  books.publisher=publisher.id AND publisher.name='PHI';
