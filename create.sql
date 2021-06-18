@@ -1,16 +1,16 @@
 create table publisher (
-    id serial primary key,
+    id integer primary key AUTOINCREMENT NOT NULL,
     name text,
     country text
     );
 
 create table subjects (
-    id serial primary key,
+    id integer primary key AUTOINCREMENT NOT NULL,
     name text
     );    
 
 create table books (
-    id serial primary key,
+    id integer primary key AUTOINCREMENT NOT NULL,
     title text,
     publisher serial references publisher(id)
     );
